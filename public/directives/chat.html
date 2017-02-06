@@ -1,0 +1,14 @@
+<div class= "chatbox">
+	<div class= "chatlogs">
+		<div  ng-repeat="singleInfo in info track by $index " class="chat" ng-class="singleInfo.classType">
+			<div class="user-photo"><img src="{{singleInfo.chatAvatar}}"></div>
+			<p class="chat-message">{{singleInfo.chatMessags}}</p>
+			<p class="chat-created_by">{{singleInfo.chatCreated_by}}</p>
+		</div>
+	</div>
+		
+	<div class="chat-form">
+		<textarea></textarea>
+		<input type='button' class="btn btn-primary" value='Send'/>
+	</div>
+</div>
